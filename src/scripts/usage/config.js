@@ -1,0 +1,39 @@
+/**
+ * Created by Administrator on 2017/2/10.
+ */
+angular.module("myApp")
+.config(["$stateProvider","$urlRouterProvider",function($stateProvider,$urlRouterProvider){
+        $urlRouterProvider.otherwise("giude");
+        $stateProvider
+            .state("giude",{
+                url:"/giude",
+                templateUrl:"./tpl/giude.html",
+                controller:"giuCtrl"
+            })
+            .state("footer",{
+                url:"/footer",
+                templateUrl:"./tpl/footer.html",
+                controller:"footerCtrl"
+            })
+            .state("footer.home",{
+                url:"/home",
+                templateUrl:"./tpl/home.html",
+                controller:"homeCtrl"
+            })
+            .state("footer.find",{
+                url:"/find",
+                templateUrl:"./tpl/find.html"
+            })
+            .state("footer.round",{
+                url:"/round",
+                templateUrl:"./tpl/round.html"
+            })
+            .state("footer.mine",{
+                url:"/mine",
+                templateUrl:"./tpl/mine.html"
+            })
+            .state("footer.quit",{
+                url:"/quit",
+                templateUrl:"./tpl/quit.html"
+            })
+}]);

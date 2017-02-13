@@ -1,0 +1,50 @@
+    <header class="header">
+        <ul>
+            <li class="yo-ico">&#xe790;</li>
+            <li>
+                <p id="navBar"><span class="active">热点</span><span>关注</span></p>
+            </li>
+            <li class="yo-ico">&#xe60c;</li>
+        </ul>
+    </header>
+    <div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="content">
+                        <ul class="listCont" id="listCont">
+                            <li class="nav-bg">足球现场</li>
+                            <li>足球生活</li>
+                            <li>足球美女</li>
+                        </ul>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="Waterfall-flow" id="Waterfall-flow">
+                                        <ul ng-repeat="item in arr">
+                                            <li>
+                                                <img ng-src={{item[0].img}} alt=""/>
+                                                <a href="">{{item[0].title}}</a>
+                                            </li>
+                                            <li></li>
+                                            <li>
+                                                <img ng-src={{item[1].img}} alt=""/>
+                                                <a href="">{{item[1].title}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">足球生活</div>
+                                <div class="swiper-slide">足球美女</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    关注
+                </div>
+            </div>
+        </div>
+    </div>
+
+
